@@ -1,0 +1,14 @@
+// ALL
+$body-color                             : #4a4a4a;
+$theme-colors: (
+  // "primary"                             : #41bb72,
+  "info"                                : #016FB9,
+  "success"                             : #41bb72,
+  "warning"                             : #E3D081,
+  "danger"                              : darken(#FF715B, 1%)
+);
+
+$enable-rounded                         : false;
+
+//
+@import "../../bower_components/bootstrap/scss/bootstrap";

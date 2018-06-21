@@ -1,0 +1,100 @@
+aside.menu.--admin(v-bind:class="[{'visible': isVisible}, {'mobile': isMobile}]")
+  .admin-logo.d-none.d-lg-block
+    img(src='assets/images/logo-piq.png', alt='PIQ Strata')
+  //- admin-logo
+  .menu-wrap
+    p.menu-label
+      | General
+    //- p
+    ul.menu-list
+      li
+        a.is-active(href='dashboard.html') Dashboard
+      //- li
+      li
+        a My Properties
+      //- li     
+      li
+        a(href='contact.html') Contact
+      //- li
+    //- ul
+    p.menu-label
+      | Accounts
+    //- p
+    ul.menu-list
+      li
+        a Strata
+        |
+        ul
+          li
+            a Due Notices
+          //- li
+          |         
+          li
+            a Receipts
+          //- li
+          |         
+          li
+            a Meetings
+          //- li
+          li
+            a Insurance
+          //- li
+          |         
+          li
+            a Contacts
+          //- li
+        //- ul
+      //- li
+      li
+        a General
+        |       
+        ul
+          li
+            a Documents
+          //- li
+        //- ul
+      //- li
+    //- ul
+  //- menu-wrap
+//- aside
+
+header
+  nav.navbar.navbar-expand-lg.navbar-light.fixed-top.top-bar
+    .container
+      //- a.mobile-menu.d-lg-none(@click='toggleMobileMenu()')
+      //-   i.fas.fa-bars
+      //- //- a
+      button.navbar-toggler.mobile-menu.d-lg-none(type='button')
+        span.navbar-toggler-icon
+      //- button
+      a.navbar-brand.d-lg-none.mr-0(href='#')
+        span.navbar-item.pr-0
+          img(src='assets/images/logo-piq.png', alt='PIQ Strata')
+        //- span
+      //- a
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarColor01', aria-controls='navbarColor01', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      //- button
+      #navbarColor01.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item.dropdown
+            a#navbarDropdown.nav-link.dropdown-toggle(href="#", role="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+              i.fas.fa-user-circle
+              strong &nbsp;Rodan Luzuriaga
+            //- a
+            .dropdown-menu.dropdown-menu-right(aria-labelledby="navbarDropdown")
+              a.dropdown-item(href="#")
+                i.fas.fa-cog
+                | &nbsp;Account Settings
+              //- a
+              a.dropdown-item(href="index.html")
+                i.fas.fa-sign-out-alt
+                | &nbsp;Log out
+              //- a
+            //- dropdown-menu
+          //- li
+        //- ul
+      //- collapse
+    //- container
+  //- nav
+//- header

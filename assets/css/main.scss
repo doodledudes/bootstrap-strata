@@ -1,0 +1,212 @@
+// ===============================[BREAK POINTS]===============================
+// xs, sm, md, lg, xl
+// @include media-breakpoint-up(md) { ... }
+// @include media-breakpoint-down(md) { ... }
+// @include media-breakpoint-only(md) { ... }
+// @include media-breakpoint-between(md, xl) { ... }
+
+@import '_custom';
+@import '_admin';
+
+html {
+  // Fluid-type Settings
+  // font-size: 16px;
+}
+body {
+  // Fluid-type Settings
+  // font-size: 62.5%;
+  padding-top: 61px;
+}
+
+// =============================================================================[ BOOTSTRAP OVERRIDE ]
+section, .lead span {
+  font-weight: lighter;
+}
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='phone'],
+textarea {
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #dbdbdb;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: #dbdbdb;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: #dbdbdb;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: #dbdbdb;
+  }
+}
+.btn,
+.form-control {
+  border-radius: 2px;
+}
+.input-group {
+  .input-group-text {
+    background: white;
+    border-radius: 0;
+    padding-right: 0;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    color: #dbdbdb;
+  }
+  .input-group-prepend + .form-control {
+    border-left: 0;
+  }
+}
+
+// =============================================================================[ CUSTOM CSS ]
+nav {
+  &.navbar {
+    border-bottom: 1px solid #f2f2f2;
+  }
+}
+.navbar-brand {
+  & {
+    padding: 0;
+  }
+  .navbar-item {
+    & {
+      display: flex;
+      line-height: 1.5;
+      padding: 0.5rem 1rem 0.5rem 0;
+      position: relative;
+    }
+    img {
+      max-height: 1.75rem;
+    }
+  }
+}
+.section {
+    padding: 1rem 0;
+    @include media-breakpoint-up(md) {
+      padding: 3rem 0;
+    }
+}
+section {
+  &.--banner {
+    & {
+      min-height: 30rem;
+      background: url("../../assets/images/img-banner.jpg") center center;
+      background-size: cover;
+    }
+    .hero-body {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      h1, h4 {
+        color: white;
+        font-weight: 400;
+      }
+      h4 {
+        color: rgba(255,255,255,0.9);
+      }
+      .card {
+        border: 0;
+        border-radius: 0;
+      }
+    }
+  }
+  &.--light {
+    background: #f5f5f5;
+  }
+}
+
+.form-group {
+  input, textarea {
+    box-shadow: none;
+  }
+}
+
+footer {
+  & {
+    background-color: #fff;
+    padding: 3rem 1.5rem 6rem;
+    font-size: .75rem;
+  }
+  a {
+    margin-right: 10px;
+  }
+}
+
+#sectionMembers,
+#sectionManagers {
+  .icon {
+    font-size: 2.5rem;
+  }
+}
+
+// =============================================================================[ PAGES ]
+
+
+
+// =============================================================================[ NAVBAR ANIMATION ]
+.navbar-toggler {
+  border: 0;
+  &:focus {
+    outline: 0;
+  }
+  &[aria-expanded="true"] {
+    .navbar-toggler-icon {
+      & {
+        background: none;
+        position: relative;
+      }
+      &::before, &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        margin: auto;
+        height: 2px;
+        background: #7f7f7f;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        transition: transform 1s ease-in-out;
+      }
+      &::before {
+        transform: rotate(45deg);
+        left: 0;
+      }
+      &::after {
+        transform: rotate(-45deg);
+        right: 0;
+      }
+    }
+  }
+  &.mobile-menu {
+    &.aside-open {
+      .navbar-toggler-icon {
+        & {
+          background: none;
+          position: relative;
+        }
+        &::before, &::after {
+          content: '';
+          display: block;
+          width: 50%;
+          margin: auto;
+          height: 2px;
+          background: #fff;
+          position: absolute;
+          transition: transform 1s ease-in-out;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+        &::before {
+          transform: rotate(-35deg) translateX(50%);
+          left: 0;
+        }
+        &::after {
+          transform: rotate(35deg) translateX(50%);
+          left: 0;
+        }
+      }
+    }
+  }
+}

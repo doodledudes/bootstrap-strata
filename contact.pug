@@ -1,0 +1,88 @@
+extends ./layout/_admin.pug
+
+block content
+  
+  .admin-wrap
+    .container.is-fluid.--contact
+      .row
+        .col-lg-8.offset-lg-2
+          .card
+            header.--contact
+              .row
+                .col.block
+                  p
+                    | Contact [agent name]
+                  //- p
+                  p.small
+                    | 214/14-16 Lexington Drive
+                    br
+                    | BELLA VISTA NSW 2153
+                    br
+                    | Phone: (02) 9086 9123
+                    br
+                    a.text-white(href='mailto:mail@norweststrata.com.au') mail@norweststrata.com.au
+                  //- p
+                //- column
+              //- columns
+            //- header
+            .card-body
+              .row
+                .col
+                  .form-group
+                    label.label Name
+                    input.form-control(type="text", placeholder="")
+                  //- form-group
+                  .form-group
+                    label.label Email
+                    .input-group
+                      .input-group-prepend
+                        .input-group-text
+                          i.fas.fa-envelope
+                        //- input-group-text
+                      //- input-group-prepend
+                      input.form-control(type="email", placeholder="youremail@")
+                    //- input-group
+                  //- form-group
+                  .form-group
+                    label.label Mobile Number
+                    .control
+                      input.form-control(type="text", placeholder="")
+                    //- control
+                  //- form-group
+                  .form-group
+                    label.label Related to Property
+                    .form-inline
+                      select.form-control
+                        option Select dropdown
+                        option With options
+                      //- select
+                    //- form-inline
+                  //- form-group
+                  .form-group
+                    label.label Contact Reason
+                    .form-inline
+                      select.form-control
+                        option Question
+                        option With options
+                      //- select
+                    //- form-inline
+                  //- form-group
+                  .form-group
+                    label.label Message
+                    textarea.form-control(placeholder="", rows="5")
+                  //- form-group
+                  .text-right
+                    a.btn.btn-danger(href='') Send
+                  //- form-group
+                //- column
+              //- columns
+            //- message-body
+          //- card
+        //- column
+      //- columns
+    //- container
+  //- section
+
+block scripts
+  script.
+    
