@@ -1,0 +1,76 @@
+extends ./layout/_admin.pug
+
+block content
+  
+  .admin-wrap
+    .container.is-fluid.--contact
+      p.h3 Dashboard
+      .row.mb-3.align-items-center.flex-wrap
+        .col-md-6
+          small Showing Results 1 - 7 of 78 (page 1 of 8)
+        //- col
+        .col-md-6.text-md-right.small
+          .form-group.mb-0
+            label.mr-2 Sort by
+            .form-inline.d-inline
+              select.form-control.form-control-sm
+                option Select dropdown
+                option With options
+              //- select
+            //- form-inline
+            label.ml-2
+              a(href="") Asc
+              span.ml-2.mr-2 /
+              a(href="") Desc
+            //- label
+          //- form-group
+        //- col
+      //- row
+      .card
+        .table-responsive.small
+          table.table.mb-0
+            thead.thead-light
+              tr
+                th(scope="col", width="100")
+                th(scope="col") Strata
+                th(scope="col") Status
+                th(scope="col") 
+              //- tr
+            //- thead
+            tbody
+              tr
+                th(scope="row")
+                  img(src="//via.placeholder.com/350", class="rounded mx-auto d-block img-fluid", alt="...")
+                //- th
+                td Company Name
+                td.text-uppercase.text-warning pending
+                td @mdo
+              //- tr
+              |     
+              tr
+                th(scope="row")
+                  img(src="//via.placeholder.com/350", class="rounded mx-auto d-block img-fluid", alt="...")
+                //- th
+                td Company Name
+                td.text-uppercase.text-success active
+                td @fat
+              //- tr
+              |     
+              tr
+                th(scope="row")
+                  img(src="//via.placeholder.com/350", class="rounded mx-auto d-block img-fluid", alt="...")
+                //- th
+                td Company Name
+                td.text-uppercase.text-warning pending
+                td @twitter
+              //- tr
+            //- tbody
+          //- table
+        //- table-responsive
+      //- card
+    //- container
+  //- section
+
+block scripts
+  script.
+    
