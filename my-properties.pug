@@ -1,0 +1,49 @@
+extends ./layout/_admin.pug
+
+block content
+  
+  .admin-wrap
+    .container.is-fluid
+      
+      h4.h4 My Properties
+      //- h2
+      br
+      .card.is-size-8.--membership-details.small
+        .table-responsive
+          table.table.mb-0.table-hover
+            thead
+              tr
+                th Property Name
+                th Fees
+                th Paid To
+                th Total Due
+                th Managed by
+              //- tr
+            //- thead
+            tbody
+              tr
+                td
+                  a.text-muted(href="property-details.html") 1 - Church St Hokowhitu NSW Australia
+                td $617.40 
+                td 13/04/2018
+                td $0.00
+                td Ashley Jones
+              //- tr
+              tr
+                td
+                  a.text-muted(href="property-details.html") JONOTEST - Church St Hokowhitu NSW Australia
+                td $0.00 
+                td N/A
+                td $717.40
+                td Ashley Jones
+              //- tr
+            //- tbody
+          //- table
+        //- table-responsive
+      //- card
+    //- container
+  //- section
+
+block scripts
+  script.
+    

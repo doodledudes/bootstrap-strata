@@ -1,0 +1,286 @@
+extends ./layout/_admin.pug
+
+block content
+  
+  .admin-wrap
+    .container.is-fluid
+      .input-group.mb-3.input-group-lg
+        input.form-control(type="text", placeholder="Customer Name, Email, Login Name, Account ID...", aria-label="Recipient's username", aria-describedby="basic-addon2")
+        .input-group-append
+          button.btn.btn-danger(type="button")
+            i.fas.fa-search
+          //- button
+        //- input-button-append
+      //- input-group
+      br
+      h4.h4.text-center
+        i.fas.fa-map-marker-alt
+        | &nbsp;1 - 12 Queen Street Arncliffe NSW 2205
+      //- h2
+      br
+      .row.key-details.flex-wrap
+        .col-md-4.col-6
+          .wrap
+            .icon
+              i.far.fa-building
+            //- icon
+            .card-title Strata
+            label 2 - Lot (Owner): 11306 1/1 BAY CUSTODIANS NO. 2 P/L
+          //- wrap
+        //- column
+        .col-md-4.col-6
+          .wrap
+            .icon
+              i.far.fa-address-card
+            //- icon
+            .card-title Address
+            label 12 QUEEN STREET, ARNCLIFFE, NSW 2205
+          //- wrap
+        //- column
+        .col-md-4.col-6
+          .wrap
+            .icon
+              i.fas.fa-tag
+            //- icon
+            .card-title Plan Number
+            label 11306
+          //- wrap
+        //- column
+        .col-lg-2.col-6
+          .wrap
+            .icon
+              i.fas.fa-angle-double-right.fa-xs
+              i.fas.fa-users
+            //- icon
+            .card-title Next AGM
+            label 04/10/2018
+          //- wrap
+        //- column
+        .col-lg-2.col-6
+          .wrap
+            .icon
+              i.fas.fa-users
+              i.fas.fa-angle-double-left.fa-xs
+            //- icon
+            .card-title Last AGM
+            label 04/10/2017
+          //- wrap
+        //- column
+        .col-lg-4.col-6
+          .wrap
+            .icon
+              i.fas.fa-dollar-sign
+            //- icon
+            .card-title Total Liabilities
+            label 0.00
+          //- wrap
+        //- column
+        .col-lg-4.col-12.col-md-6.is-success
+          .wrap
+            .icon
+              i.fas.fa-user-circle
+            //- icon
+            .card-title Managed by	
+            label John Touma - DS
+          //- wrap
+        //- column
+      //- row
+      br
+      .row.flex-wrap
+        .col
+          .card
+            #demo.carousel.slide(data-ride="carousel")
+              // Indicators
+              ul.carousel-indicators
+                li.active(data-target="#demo", data-slide-to="0")
+                li(data-target="#demo", data-slide-to="1")
+                li(data-target="#demo", data-slide-to="2")
+              //- ul
+              .carousel-inner
+                .carousel-item.active
+                  img(src="https://t-ec.bstatic.com/xdata/images/hotel/max1024x768/68742148.jpg?k=135516c68b31a9be0ae85510d29f3f2474e238d723dfe76dd0259ce6c849a564&o=", alt="Los Angeles", width="100%", height="auto")
+                //- carousel-item
+                .carousel-item
+                  img(src="https://t-ec.bstatic.com/xdata/images/hotel/max1024x768/68752674.jpg?k=1eb8b741f08c324c5feef22345bd0264261ca9a3c88052be2835553e5c2f5df1&o=", alt="Chicago", width="100%", height="auto")
+                //- carousel-item
+                .carousel-item
+                  img(src="https://t-ec.bstatic.com/xdata/images/hotel/max1024x768/68744176.jpg?k=c0a3d670a1668f681d5d2f496e1061a229c574969c076e6c979e179e08ee0e46&o=", alt="New York", width="100%", height="auto")
+                //- carousel-item
+              //- carousel-inner
+              // Left and right controls
+              a.carousel-control-prev(href="#demo", data-slide="prev")
+                span.carousel-control-prev-icon
+              //- a
+              a.carousel-control-next(href="#demo", data-slide="next")
+                span.carousel-control-next-icon
+              //- a
+            //- carousel
+          //- card
+          br
+          .card.is-size-7.--membership-details.small
+            header.card-header
+              p.card-header-title
+                | Membership Details
+              //- p
+            //- header
+            .row
+              .col
+                .wrap.left
+                  .row
+                    .col-6
+                      label Liability Units
+                    //- column
+                    .col-6
+                      strong 0.00
+                    //- column
+                  //- columns
+                  .row
+                    .col-6
+                      label Entitlement Units
+                    //- column
+                    .col-6
+                      strong 1,000.00
+                    //- column
+                  //- columns
+                  .row
+                    .col-6
+                      label Accessory Units
+                    //- column
+                    .col-6
+                      strong 0.0
+                    //- column
+                  //- columns
+                  .row
+                    .col-6
+                      label Lot Number
+                    //- column
+                    .col-6
+                      strong 0
+                    //- column
+                  //- columns
+                  .row
+                    .col-6
+                      label Fees Outstanding
+                    //- column
+                    .col-6
+                      strong $0.00
+                    //- column
+                  //- columns
+                  .row
+                    .col-6
+                      label Other Outstanding
+                    //- column
+                    .col-6
+                      strong $0.00
+                    //- column
+                  //- columns
+                //- wrap
+              //- column
+              .col
+                .wrap.right
+                  .row
+                    .col-6
+                      label Fees
+                    //- column
+                    .col-6
+                      strong $0.00
+                    //- column
+                  //- columns
+                  .row
+                    .col-6
+                      label Paid To
+                    //- column
+                    .col-6
+                      strong N/A
+                    //- column
+                  //- columns
+                  .row
+                    .col-6
+                      label Credit Amount
+                    //- column
+                    .col-6
+                      strong $0.00
+                    //- column
+                  //- columns
+                  .row
+                    .col-6
+                      label Interest Accrued
+                    //- column
+                    .col-6
+                      strong $0.00
+                    //- column
+                  //- columns
+                  .row.is-hidden-mobile
+                    .col-6
+                      label &nbsp;
+                    //- column
+                    .col-6
+                      strong &nbsp;
+                    //- column
+                  //- columns
+                  .row
+                    .col-6
+                      label Total Outstanding
+                    //- column
+                    .col-6
+                      strong $0.00
+                    //- column
+                  //- columns
+                //- wrap
+              //- column
+            //- columns
+          //- card
+          br
+        //- column
+        .col-lg-5
+          .card.is-size-7.small
+            header.card-header
+              p.card-header-title
+                | Due Notices
+              //- p
+            //- header
+            .card-content
+              p.subtitle.is-size-7 Nothing to display
+            //- card-content
+          //- card
+          br
+          .card.is-size-7.small
+            header.card-header
+              p.card-header-title
+                | Reciepts
+              //- p
+            //- header
+            .card-content
+              p.subtitle.is-size-7 Nothing to display
+            //- card-content
+          //- card
+          br
+          .card.is-size-7.small
+            header.card-header
+              p.card-header-title
+                | Meetings
+              //- p
+            //- header
+            .card-content
+              p.subtitle.is-size-7 Nothing to display
+            //- card-content
+          //- card
+          br
+          .card.is-size-7.small
+            header.card-header
+              p.card-header-title
+                | Documents
+              //- p
+            //- header
+            .card-content
+              p.subtitle.is-size-7 Nothing to display
+            //- card-content
+          //- card
+        //- column
+      //- columns
+    //- container
+  //- section
+
+block scripts
+  script.
+    
