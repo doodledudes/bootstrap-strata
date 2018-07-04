@@ -301,6 +301,9 @@ aside {
       }
     }
   }
+  &.dashboard > [class^="col"] {
+    margin: 0;
+  }
 }
 .--membership-details {
   .wrap {
