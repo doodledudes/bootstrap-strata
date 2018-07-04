@@ -211,6 +211,7 @@ footer {
   }
 }
 
+// ************************************* NEW
 // TIMELINE
 .timeline-scroll {
   & {
@@ -275,8 +276,10 @@ footer {
         background: #41bb72;
       }
     }
-    .title {
-      font-weight: bold;
+    .notice {
+      margin-top: 10px;
+      border-top: 1px solid #eee;
+      padding-top: 10px;
     }
     .date {
       font-size: .7rem;
@@ -288,6 +291,45 @@ footer {
       &::before {
         content: none;
       }
+    }
+  }
+}
+.my-properties {
+  & {
+
+  }
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .item {
+    margin-bottom: 30px;
+  }
+  .image {
+    height: 150px;
+    background-size: cover;
+  }
+  .details {
+    & {
+      padding: 15px;
+      font-size: .8rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .name {
+      font-size: 1.1rem;
+      flex-grow: 1;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+    }
+    .next-agm {
+      padding-top: 10px;
+      margin-top: 10px;
+      border-top: 1px solid #eee;
     }
   }
 }

@@ -10,38 +10,6 @@ block content
       br
       .row.flex-wrap
         .col-lg-4.order-lg-1
-          p.h6 Next AGM
-          .timeline-scroll
-            .timeline
-              .item.latest
-                .title AGM Name
-                .date 10/11/12
-              //- item
-              .item
-                .title AGM Name
-                .date 10/11/12
-              //- item
-              .item
-                .title AGM Name
-                .date 10/11/12
-              //- item
-              .item
-                .title AGM Name
-                .date 10/11/12
-              //- item
-              .item
-                .title AGM Name
-                .date 10/11/12
-              //- item
-              .item.end
-                .text-muted Looks like you've reached the end
-              //- item
-            //- timeline
-          //- timeline-scroll
-          .fender
-          br
-        //- col
-        .col
           .row.key-details.flex-wrap
             .col
               .wrap
@@ -63,108 +31,224 @@ block content
             //- column
           //- row
           br
-          p.h6 My Properties
-          .card.is-size-8.--membership-details.small
-            .table-responsive
-              table.table.mb-0.table-hover
-                thead
-                  tr
-                    th(width="70")
-                    th(width="170") Property Name
-                    th Fees
-                    th Paid To
-                    th Total Due
-                    th Managed by
-                  //- tr
-                //- thead
-                tbody
-                  tr
-                    td
-                      img(src="https://t-ec.bstatic.com/xdata/images/hotel/max1024x768/68742148.jpg?k=135516c68b31a9be0ae85510d29f3f2474e238d723dfe76dd0259ce6c849a564&o=", alt="Los Angeles", width="70")
-                    //- td
-                    td
-                      a.text-muted(href="property-details.html")
-                        | 1 - Church St
-                        br
-                        | Hokowhitu NSW
-                        br
-                        | Australia
-                      //- a
-                    //- td
-                    td $617.40 
-                    td 13/04/2018
-                    td $0.00
-                    td Ashley Jones
-                  //- tr
-                  tr
-                    td
-                      img(src="https://t-ec.bstatic.com/xdata/images/hotel/max1024x768/68744176.jpg?k=c0a3d670a1668f681d5d2f496e1061a229c574969c076e6c979e179e08ee0e46&o=", alt="Los Angeles", width="70")
-                    //- td
-                    td
-                      a.text-muted(href="property-details.html")
-                        | JONOTEST - Church St
-                        br
-                        | Hokowhitu NSW
-                        br
-                        | Australia
-                      //- a
-                    //- td
-                    td $0.00 
-                    td N/A
-                    td $717.40
-                    td Ashley Jones
-                  //- tr
-                //- tbody
-              //- table
-            //- table-responsive
-          //- card
-          br
           p.h6 Due Notices
-          .card.is-size-8.--membership-details.small
-            .table-responsive
-              table.table.mb-0
-                thead
-                  tr
-                    th Notice
-                    th Amount
-                    th Date
-                  //- tr
-                //- thead
-                tbody
-                  tr
-                    td
-                      a(href="") Lot_1_-_Due_Notice_-_18-04-2018_-_6163.pdf
-                    //- td
-                    td $0.00
-                    td 10/11/12
-                  //- tr
-                  tr
-                    td
-                      a(href="") B33-2013-09-09BODY-CORPORATE-ID-20008.PDF
-                    //- td
-                    td $0.00
-                    td 10/11/12
-                  //- tr
-                  tr
-                    td
-                      a(href="") Lot_1_-_Due_Notice_-_18-04-2018_-_6163.pdf
-                    //- td
-                    td $0.00
-                    td 10/11/12
-                  //- tr
-                  tr
-                    td
-                      a(href="") B33-2013-09-09BODY-CORPORATE-ID-20008.PDF
-                    //- td
-                    td $0.00
-                    td 10/11/12
-                  //- tr
-                //- tbody
-              //- table
-            //- table-responsive
-          //- card
+          .timeline-scroll
+            .timeline
+              .item.latest
+                .row
+                  .col
+                    .amount $0.00
+                  //- col
+                  .col.text-right
+                    .date 10/11/12
+                  //- col
+                //- row
+                .notice
+                  a(href="") Lot_1_-_Due_Notice_-_18-04-2018_-_6163.pdf
+                //- notice
+              //- item
+              .item
+                .row
+                  .col
+                    .amount $0.00
+                  //- col
+                  .col.text-right
+                    .date 10/11/12
+                  //- col
+                //- row
+                .notice
+                  a(href="") B33-2013-09-09BODY-CORPORATE-ID-20008.PDF
+                //- notice
+              //- item
+              .item.end
+                .text-muted Looks like you've reached the end
+              //- item
+            //- timeline
+          //- timeline-scroll
+          .fender
           br
         //- col
+        .col
+          //- p.h6 My Properties
+          .row.flex-wrap.my-properties
+            .col-md-6.item
+              .card
+                .image(style="background-image: url(https://t-ec.bstatic.com/xdata/images/hotel/max1024x768/68742148.jpg?k=135516c68b31a9be0ae85510d29f3f2474e238d723dfe76dd0259ce6c849a564&o=)")
+                .details
+                  .name 1 - Church St Hokowhitu NSW Australia
+                  .row
+                    .col
+                      .fees
+                        span.text-muted.mr-2 Fees
+                        strong $617.40
+                      //- fees
+                      .paid-to
+                        span.text-muted.mr-2 Paid to
+                        strong 13/04/2018
+                      //- paid-to
+                    //- col
+                    .col
+                      .total-due
+                        span.text-muted.mr-2 Total Due
+                        strong $0.00
+                      //- total-due
+                      .by
+                        span.text-muted.mr-2 By
+                        strong Ashley Jones
+                      //- by
+                    //- col
+                  //- row
+                  .next-agm
+                    table.agm
+                      tr
+                        td(valign="top")
+                          span.text-muted.mr-1 Next AGM :
+                        //- td
+                        td
+                          strong.mr-2 AGM Name
+                          span.mr-2 at
+                          strong.date 10/11/12
+                        td
+                      //- tr
+                    //- agm
+                  //- next-agm
+                //- details
+              //- card
+            //- col
+            .col-md-6.item
+              .card
+                .image(style="background-image: url(https://t-ec.bstatic.com/xdata/images/hotel/max1024x768/68744176.jpg?k=c0a3d670a1668f681d5d2f496e1061a229c574969c076e6c979e179e08ee0e46&o=)")
+                .details
+                  .name JONOTEST - Church St Hokowhitu NSW Australia
+                  .row
+                    .col
+                      .fees
+                        span.text-muted.mr-2 Fees
+                        strong $0.00
+                      //- fees
+                      .paid-to
+                        span.text-muted.mr-2 Paid to
+                        strong N/A
+                      //- paid-to
+                    //- col
+                    .col
+                      .total-due
+                        span.text-muted.mr-2 Total Due
+                        strong $0.00
+                      //- total-due
+                      .by
+                        span.text-muted.mr-2 By
+                        strong Ashley Jones
+                      //- by
+                    //- col
+                  //- row
+                  .next-agm
+                    table.agm
+                      tr
+                        td(valign="top")
+                          span.text-muted.mr-1 Next AGM :
+                        //- td
+                        td
+                          strong.mr-2 AGM Name
+                          span.mr-2 at
+                          strong.date 10/11/12
+                        td
+                      //- tr
+                    //- agm
+                  //- next-agm
+                //- details
+              //- card
+            //- col
+            .col-md-6.item
+              .card
+                .image(style="background-image: url(https://t-ec.bstatic.com/xdata/images/hotel/max1024x768/68742148.jpg?k=135516c68b31a9be0ae85510d29f3f2474e238d723dfe76dd0259ce6c849a564&o=)")
+                .details
+                  .name 1 - Church St Hokowhitu NSW Australia
+                  .row
+                    .col
+                      .fees
+                        span.text-muted.mr-2 Fees
+                        strong $617.40
+                      //- fees
+                      .paid-to
+                        span.text-muted.mr-2 Paid to
+                        strong 13/04/2018
+                      //- paid-to
+                    //- col
+                    .col
+                      .total-due
+                        span.text-muted.mr-2 Total Due
+                        strong $0.00
+                      //- total-due
+                      .by
+                        span.text-muted.mr-2 By
+                        strong Ashley Jones
+                      //- by
+                    //- col
+                  //- row
+                  .next-agm
+                    table.agm
+                      tr
+                        td(valign="top")
+                          span.text-muted.mr-1 Next AGM :
+                        //- td
+                        td
+                          strong.mr-2 AGM Name
+                          span.mr-2 at
+                          strong.date 10/11/12
+                        td
+                      //- tr
+                    //- agm
+                  //- next-agm
+                //- details
+              //- card
+            //- col
+            .col-md-6.item
+              .card
+                .image(style="background-image: url(https://t-ec.bstatic.com/xdata/images/hotel/max1024x768/68744176.jpg?k=c0a3d670a1668f681d5d2f496e1061a229c574969c076e6c979e179e08ee0e46&o=)")
+                .details
+                  .name JONOTEST - Church St Hokowhitu NSW Australia
+                  .row
+                    .col
+                      .fees
+                        span.text-muted.mr-2 Fees
+                        strong $0.00
+                      //- fees
+                      .paid-to
+                        span.text-muted.mr-2 Paid to
+                        strong N/A
+                      //- paid-to
+                    //- col
+                    .col
+                      .total-due
+                        span.text-muted.mr-2 Total Due
+                        strong $0.00
+                      //- total-due
+                      .by
+                        span.text-muted.mr-2 By
+                        strong Ashley Jones
+                      //- by
+                    //- col
+                  //- row
+                  .next-agm
+                    table.agm
+                      tr
+                        td(valign="top")
+                          span.text-muted.mr-1 Next AGM :
+                        //- td
+                        td
+                          strong.mr-2 AGM Name
+                          span.mr-2 at
+                          strong.date 10/11/12
+                        td
+                      //- tr
+                    //- agm
+                  //- next-agm
+                //- details
+              //- card
+            //- col
+          //- row
+          br
       //- row
     //- container
   //- section
