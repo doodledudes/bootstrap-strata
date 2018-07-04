@@ -17,7 +17,7 @@ block content
                   i.fas.fa-dollar-sign
                 //- icon
                 .card-title Total Fees
-                label.display-5 $617.40
+                label.display-5#totalFees $1,914
               //- wrap
             //- column
             .col
@@ -26,7 +26,7 @@ block content
                   i.fas.fa-bell
                 //- icon
                 .card-title Total Due
-                label $717.40
+                label#totalDue $2,472
               //- wrap
             //- column
           //- row
@@ -37,7 +37,7 @@ block content
               .item.latest
                 .row
                   .col
-                    .amount $0.00
+                    .amount $641.00
                   //- col
                   .col.text-right
                     .date 10/11/12
@@ -50,7 +50,7 @@ block content
               .item
                 .row
                   .col
-                    .amount $0.00
+                    .amount $278.00
                   //- col
                   .col.text-right
                     .date 10/11/12
@@ -80,7 +80,7 @@ block content
                     .col
                       .fees
                         span.text-muted.mr-2 Fees
-                        strong $617.40
+                        strong.val-fees $617.40
                       //- fees
                       .paid-to
                         span.text-muted.mr-2 Paid to
@@ -90,7 +90,7 @@ block content
                     .col
                       .total-due
                         span.text-muted.mr-2 Total Due
-                        strong $0.00
+                        strong.val-due $1,039.00
                       //- total-due
                       .by
                         span.text-muted.mr-2 By
@@ -119,12 +119,12 @@ block content
               .card
                 .image(style="background-image: url(https://t-ec.bstatic.com/xdata/images/hotel/max1024x768/68744176.jpg?k=c0a3d670a1668f681d5d2f496e1061a229c574969c076e6c979e179e08ee0e46&o=)")
                 .details
-                  .name JONOTEST - Church St Hokowhitu NSW Australia
+                  .name 99 - Church St Hokowhitu NSW
                   .row
                     .col
                       .fees
                         span.text-muted.mr-2 Fees
-                        strong $0.00
+                        strong.val-fees $210.60
                       //- fees
                       .paid-to
                         span.text-muted.mr-2 Paid to
@@ -134,7 +134,7 @@ block content
                     .col
                       .total-due
                         span.text-muted.mr-2 Total Due
-                        strong $0.00
+                        strong.val-due $856.00
                       //- total-due
                       .by
                         span.text-muted.mr-2 By
@@ -161,14 +161,14 @@ block content
             //- col
             .col-md-6.item
               .card
-                .image(style="background-image: url(https://t-ec.bstatic.com/xdata/images/hotel/max1024x768/68742148.jpg?k=135516c68b31a9be0ae85510d29f3f2474e238d723dfe76dd0259ce6c849a564&o=)")
+                .image(style="background-image: url(https://a0.muscache.com/im/pictures/79452273/12bc436d_original.jpg?aki_policy=xx_large)")
                 .details
                   .name 1 - Church St Hokowhitu NSW Australia
                   .row
                     .col
                       .fees
                         span.text-muted.mr-2 Fees
-                        strong $617.40
+                        strong.val-fees $128.00
                       //- fees
                       .paid-to
                         span.text-muted.mr-2 Paid to
@@ -178,7 +178,7 @@ block content
                     .col
                       .total-due
                         span.text-muted.mr-2 Total Due
-                        strong $0.00
+                        strong.val-due $256.00
                       //- total-due
                       .by
                         span.text-muted.mr-2 By
@@ -205,14 +205,14 @@ block content
             //- col
             .col-md-6.item
               .card
-                .image(style="background-image: url(https://t-ec.bstatic.com/xdata/images/hotel/max1024x768/68744176.jpg?k=c0a3d670a1668f681d5d2f496e1061a229c574969c076e6c979e179e08ee0e46&o=)")
+                .image(style="background-image: url(https://a0.muscache.com/im/pictures/79452893/eaf08fdd_original.jpg?aki_policy=x_large)")
                 .details
-                  .name JONOTEST - Church St Hokowhitu NSW Australia
+                  .name Church St Hokowhitu NSW Australia
                   .row
                     .col
                       .fees
                         span.text-muted.mr-2 Fees
-                        strong $0.00
+                        strong.val-fees(id="rodan") $958.00
                       //- fees
                       .paid-to
                         span.text-muted.mr-2 Paid to
@@ -222,7 +222,7 @@ block content
                     .col
                       .total-due
                         span.text-muted.mr-2 Total Due
-                        strong $0.00
+                        strong.val-due $321.00
                       //- total-due
                       .by
                         span.text-muted.mr-2 By
